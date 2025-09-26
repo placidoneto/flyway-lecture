@@ -35,3 +35,13 @@ V3__Add_index_to_people.sql
 ```
 
 ![Flyway Schema](https://documentation.red-gate.com/fd/files/184127223/277579480/1/1737023800879/EmptySchemaVersion.png)
+
+Esta tabela é usada para manter as mudanças de banco.
+
+### Como o Flyway Aplica as Migrações
+
+O Flyway irá escanear o sistema de arquivos ou o classpath da aplicação em busca de migrações. Elas podem ser escritas em SQL, Java, ou outras linguagens de script.
+
+As migrações são aplicadas em ordem baseada em seu número de versão:
+
+![Migration Process](https://documentation.red-gate.com/fd/files/184127223/277579481/1/1737023821565/Migration-1-2.png)
